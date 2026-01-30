@@ -1,0 +1,29 @@
+name: digital_twin_seg
+channels:
+  - pytorch
+  - conda-forge
+  - defaults
+
+dependencies:
+  - python=3.10
+  - numpy
+  - matplotlib
+  - pillow
+  - opencv
+  - tqdm
+  - scikit-learn
+  - pyyaml
+  - jupyter
+  - ipykernel
+
+  # PyTorch (CPU by default)
+  - pytorch
+  - torchvision
+  - torchaudio
+
+  # pip-only packages
+  - pip
+  - pip:
+      - segmentation-models-pytorch
+      - albumentations
+      - torchmetrics
